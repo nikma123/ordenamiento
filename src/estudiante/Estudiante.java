@@ -14,13 +14,22 @@ public class Estudiante {
    private String nombre;
    private String apellido;
    private String identificacion;
-   private String puesto;
-   private String nota;
+   private int puesto;
+   private double nota;
    
-   public String imprimir(){
-       return "";
+   
+   public Estudiante(String nombre, String apellido, String identificacion, int puesto, double nota){
+       setNombre(nombre);
+       setApellido(apellido);
+       setIdentificacion(identificacion);
+       setPuesto(puesto);
+       setNota(nota);
+       
    }
-
+    public String imprimir(){
+       return "";
+    }
+   
     public String getNombre() {
         return nombre;
     }
@@ -45,19 +54,19 @@ public class Estudiante {
         this.identificacion = identificacion;
     }
 
-    public String getPuesto() {
+    public int getPuesto() {
         return puesto;
     }
 
-    public void setPuesto(String puesto) {
+    public void setPuesto(int puesto) {
         this.puesto = puesto;
     }
 
-    public String getNota() {
+    public double getNota() {
         return nota;
     }
 
-    public void setNota(String nota) {
+    public void setNota(double nota) {
         this.nota = nota;
     }
     
